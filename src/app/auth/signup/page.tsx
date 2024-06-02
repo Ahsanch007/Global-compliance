@@ -1,7 +1,6 @@
 'use client';
 
 import { Box, Text } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
 import Image from 'next/image';
 import React from 'react';
 import { headerData } from '@/components/Layout/headerConfig';
@@ -30,7 +29,7 @@ const SignupContainer = () => {
           </div>
         </div>
         <Box>
-          <Footer />
+          <Footer homePageData={undefined} />
         </Box>
       </div>
 

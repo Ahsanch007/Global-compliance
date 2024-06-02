@@ -37,7 +37,10 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
         }}
       >
         <Container size={containerMaxWidth} px="lg" className="navbar">
-          <div className="bg-white p-[25px]" style={{ borderRadius: '40px 0px 40px 0px' }}>
+          <div
+            className="bg-white p-[25px]"
+            style={{ borderRadius: '40px 0px 40px 0px' }}
+          >
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 p-4 text-black">
                 <div className="grid md:gap-[1rem] gap-[1rem]  ">
@@ -88,9 +91,15 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
                   </div>
                 </div>
               </div>
-              <div className={`w-full max-w-[285px]  md:max-w-[684px] md:w-100  md:p-4 text-black`}>
+              <div
+                className={`w-full max-w-[285px]  md:max-w-[684px] md:w-100  md:p-4 text-black`}
+              >
                 <div className={` flex flex-wrap`}>
-                  <div className={`w-full ${isLargeScreen ? 'w-100' : ' md:w-1/2'} p-2`}>
+                  <div
+                    className={`w-full ${
+                      isLargeScreen ? 'w-100' : ' md:w-1/2'
+                    } p-2`}
+                  >
                     <input
                       type="text"
                       id="first_name"
@@ -99,7 +108,11 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
                       required
                     />
                   </div>
-                  <div className={`w-full ${isLargeScreen ? 'w-100' : ' md:w-1/2'} p-2`}>
+                  <div
+                    className={`w-full ${
+                      isLargeScreen ? 'w-100' : ' md:w-1/2'
+                    } p-2`}
+                  >
                     {' '}
                     <input
                       type="text"
@@ -109,7 +122,11 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
                       required
                     />
                   </div>
-                  <div className={`w-full ${isLargeScreen ? 'w-100' : ' md:w-1/2'} p-2`}>
+                  <div
+                    className={`w-full ${
+                      isLargeScreen ? 'w-100' : ' md:w-1/2'
+                    } p-2`}
+                  >
                     <input
                       type="text"
                       id="first_name"
@@ -118,7 +135,11 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
                       required
                     />
                   </div>
-                  <div className={`w-full ${isLargeScreen ? 'w-100' : ' md:w-1/2'} p-2`}>
+                  <div
+                    className={`w-full ${
+                      isLargeScreen ? 'w-100' : ' md:w-1/2'
+                    } p-2`}
+                  >
                     {' '}
                     <input
                       type="text"
@@ -239,14 +260,18 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
                     <div className="list max-w-[162px]">
                       {menuItems.map((link, index) => (
                         <ul key={index} className="p-0">
-                          <li className="list-none cursor-pointer">{link.desc} </li>
+                          <li className="list-none cursor-pointer">
+                            {link.desc}{' '}
+                          </li>
                         </ul>
                       ))}
                     </div>
                     <div className="list">
                       {footerData.subLinks.map((link, index) => (
                         <ul key={index} className="p-0">
-                          <li className="list-none cursor-pointer ">{link.text} </li>
+                          <li className="list-none cursor-pointer ">
+                            {link.text}{' '}
+                          </li>
                         </ul>
                       ))}
                     </div>
@@ -255,13 +280,33 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
               </div>
               <div className="flex justify-between w-[335px] items-center  mt-[3rem]">
                 <div className="icon">
-                  <Image src={footerData.logoMob} width={91} height={90} alt="icon" />
+                  <Image
+                    src={footerData.logoMob}
+                    width={91}
+                    height={90}
+                    alt="icon"
+                  />
                 </div>
                 <div className="social-icon grid gap-[2rem] ">
                   <div className="flex max-w-[145px] w-100 justify-between">
-                    <Image src={footerData.linkedin} width={35} height={35} alt="linkedin" />
-                    <Image src={footerData.facebook} width={35} height={35} alt="facebook" />
-                    <Image src={footerData.youtube} width={35} height={35} alt="youtube" />
+                    <Image
+                      src={footerData.linkedin}
+                      width={35}
+                      height={35}
+                      alt="linkedin"
+                    />
+                    <Image
+                      src={footerData.facebook}
+                      width={35}
+                      height={35}
+                      alt="facebook"
+                    />
+                    <Image
+                      src={footerData.youtube}
+                      width={35}
+                      height={35}
+                      alt="youtube"
+                    />
                   </div>
                   <Text
                     sx={(theme) => ({
@@ -291,12 +336,32 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
               </div>
               <div className="social-icon  ">
                 <div className="flex max-w-[105px] justify-between mb-[2rem]">
-                  <Image className="cursor-pointer" src={footerData.linkedin} width={25} height={25} alt="linkedin" />
-                  <Image className="cursor-pointer" src={footerData.facebook} width={25} height={25} alt="facebook" />
+                  <Image
+                    className="cursor-pointer"
+                    src={footerData.linkedin}
+                    width={25}
+                    height={25}
+                    alt="linkedin"
+                  />
+                  <Image
+                    className="cursor-pointer"
+                    src={footerData.facebook}
+                    width={25}
+                    height={25}
+                    alt="facebook"
+                  />
 
-                  <Image className="cursor-pointer" src={footerData.youtube} width={25} height={25} alt="youtube" />
+                  <Image
+                    className="cursor-pointer"
+                    src={footerData.youtube}
+                    width={25}
+                    height={25}
+                    alt="youtube"
+                  />
                 </div>
-                <Text className="md:text-[12px] font-light">{footerData.rights}</Text>
+                <Text className="md:text-[12px] font-light">
+                  {footerData.rights}
+                </Text>
               </div>
             </div>
             <div className="hidden md:block  ">
@@ -371,7 +436,7 @@ export const Footer: React.FC<Props> = ({ homePageData }) => {
                   </div>
                   <div className="list">
                     {menuItems.map((link, index) => (
-                      <div>
+                      <div key={index}>
                         {link.listOfItem?.map((subLinks) => (
                           <ul key={index} className="p-0">
                             <li className="list-none text-[16px] cursor-pointer max-w-[220px] w-100 leading-[28.8px] font-light">

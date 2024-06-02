@@ -4,7 +4,6 @@ import { signupData } from './signupData';
 import { ButtonPrimary } from '../Buttons/ButtonPrimary';
 import Image from 'next/image';
 import Link from 'next/link';
-import { theme } from '@/theme/theme';
 
 export const Signup = () => {
   return (

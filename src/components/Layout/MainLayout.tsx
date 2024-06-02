@@ -36,7 +36,10 @@ export const MainLayout = ({ children }: Props) => {
           pathname?.includes('events') ||
           pathname?.includes('certificate') ||
           pathname?.includes('cart') ? (
-            <div className="bg-darkBlue pb-3 text-white" style={{ borderRadius: '0px 0px 20px 20px' }}>
+            <div
+              className="bg-darkBlue pb-3 text-white"
+              style={{ borderRadius: '0px 0px 20px 20px' }}
+            >
               <Header />
             </div>
           ) : (
@@ -51,7 +54,11 @@ export const MainLayout = ({ children }: Props) => {
               }}
             >
               <Header />
-              {pathname?.includes('portal') ? <HeroPortal /> : <HeroSection homePageData={homePageData} />}
+              {pathname?.includes('portal') ? (
+                <HeroPortal />
+              ) : (
+                <HeroSection homePageData={homePageData} />
+              )}
             </Box>
           )}
           {children}

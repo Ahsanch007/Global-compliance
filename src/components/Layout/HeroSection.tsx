@@ -59,7 +59,13 @@ export const HeroSection: React.FC<Props> = ({ homePageData }) => {
               className="   mt-[2rem]"
             >
               {headerData.ctaText}
-              <Image className="mx-2" src="/icons/arrow.svg" width={27} height={10} alt="arrow" />
+              <Image
+                className="mx-2"
+                src="/icons/arrow.svg"
+                width={27}
+                height={10}
+                alt="arrow"
+              />
             </ButtonPrimary>
           </div>
         </Box>

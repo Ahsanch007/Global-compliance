@@ -13,7 +13,6 @@
 - ⚙️ EditorConfig - Consistent coding styles across editors and IDEs
 - 🗂 Path Mapping — Import components or images using the `@` prefix
 
-
 ### Development
 
 To start the project locally, run:

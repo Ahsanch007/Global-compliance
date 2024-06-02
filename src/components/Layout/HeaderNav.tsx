@@ -45,16 +45,27 @@ export const Header: React.FC = () => {
             <div className="flex items-center justify-end">
               {session ? (
                 <Button onClick={signOutUser}>
-                  <Text className="font-semibold text-white cursor-pointer">{headerData.logout}</Text>
+                  <Text className="font-semibold text-white cursor-pointer">
+                    {headerData.logout}
+                  </Text>
                 </Button>
               ) : (
                 <Button onClick={signInUser}>
-                  <Text className="font-semibold text-white cursor-pointer">{headerData.login}</Text>
-                  <Text className="font-semibold text-white mr-[25px] cursor-pointer">{headerData.register}</Text>
+                  <Text className="font-semibold text-white cursor-pointer">
+                    {headerData.login}
+                  </Text>
+                  <Text className="font-semibold text-white mr-[25px] cursor-pointer">
+                    {headerData.register}
+                  </Text>
                 </Button>
               )}
               <Link href="../cart" style={{ textDecoration: 'none' }}>
-                <Image src={headerData.cartIcon} width={30} height={30} alt="bag" />
+                <Image
+                  src={headerData.cartIcon}
+                  width={30}
+                  height={30}
+                  alt="bag"
+                />
               </Link>
             </div>
           </div>
@@ -62,11 +73,23 @@ export const Header: React.FC = () => {
           <div className="flex justify-between items-center py-3 md:py-0 ">
             <div>
               <Link href="/" style={{ textDecoration: 'none' }}>
-                <Image src={headerData.logoImgMob} width={50} height={50} alt="icon" className="lg:hidden" />
+                <Image
+                  src={headerData.logoImgMob}
+                  width={50}
+                  height={50}
+                  alt="icon"
+                  className="lg:hidden"
+                />
               </Link>
               <Link href="/" style={{ textDecoration: 'none' }}>
                 <div className="icon">
-                  <Image src={headerData.logoImg} className="hidden lg:block" width={195.56} height={80} alt="icon" />
+                  <Image
+                    src={headerData.logoImg}
+                    className="hidden lg:block"
+                    width={195.56}
+                    height={80}
+                    alt="icon"
+                  />
                 </div>
               </Link>
             </div>
@@ -74,7 +97,12 @@ export const Header: React.FC = () => {
             <div className="flex items-center">
               {headerData.navLinks.map((link, index) => (
                 <div className="hidden lg:block" key={index}>
-                  <HoverCard key={index} width="auto" closeDelay={0.1} shadow="sm">
+                  <HoverCard
+                    key={index}
+                    width="auto"
+                    closeDelay={0.1}
+                    shadow="sm"
+                  >
                     <HoverCard.Target>
                       <Box
                         sx={{
@@ -95,7 +123,13 @@ export const Header: React.FC = () => {
                         >
                           {link.text}
                           {link.subLinks && link.subLinks.length > 0 && (
-                            <Image src="/icons/Vector 1.svg" className="mx-2" width={10} height={10} alt="bag" />
+                            <Image
+                              src="/icons/Vector 1.svg"
+                              className="mx-2"
+                              width={10}
+                              height={10}
+                              alt="bag"
+                            />
                           )}
                         </Text>
                       </Box>
@@ -140,10 +174,23 @@ export const Header: React.FC = () => {
                     alt="burger"
                   />
                 </ButtonPrimary>
-                <Link href="../cart" className="lg:hidden" style={{ textDecoration: 'none' }}>
-                  <Image src={headerData.cartIcon} width={30} height={30} alt="bag" />
+                <Link
+                  href="../cart"
+                  className="lg:hidden"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Image
+                    src={headerData.cartIcon}
+                    width={30}
+                    height={30}
+                    alt="bag"
+                  />
                 </Link>
-                <Link href="../dashboard" className="hidden lg:block" style={{ textDecoration: 'none' }}>
+                <Link
+                  href="../dashboard"
+                  className="hidden lg:block"
+                  style={{ textDecoration: 'none' }}
+                >
                   <ButtonPrimary
                     sx={{
                       backgroundColor: theme.colors.golden,
