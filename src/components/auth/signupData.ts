@@ -1,0 +1,15 @@
+export const signupData = {
+  headingText: 'Welcome to GCI, Sign up to continue.',
+  headingText2: 'Welcome to GCI, Login to continue.',
+  subText: 'Give us some of your information to get free access to GCI.',
+  ctxText: 'Sign Up with Google',
+  loginBtn: 'Login with Google',
+  termsText: 'By creating an account you agree to the   ',
+  subTermsText: 'and our',
+  terms: 'Terms of use',
+  privacy: 'Privacy Policy.',
+  ctxText2: 'Create account',
+  ctxText3: 'Login',
+  text: 'Already have an account?',
+  login: 'Log In',
+};

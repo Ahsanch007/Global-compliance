@@ -1,0 +1,16 @@
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
+
+.button-primary {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.button-primary:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.mantine-jy99zs:hover {
+  background-color: rgb(222 173 63) !important;
+}
